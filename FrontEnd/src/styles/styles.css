@@ -1,0 +1,319 @@
+/*Common Styles*/
+
+* { outline: 0; border: 0; padding: 0; margin: 0; }
+
+html,body, #app { height: 100%; }
+
+body { font: 14px/18px; background: #ede7cf; font-family: 'Open Sans', sans-serif;  }
+
+ul li { list-style: none; }
+
+.container-fluid { padding: 0 !important; }
+
+.main { height: 100%; border-top: 10px solid #333333; }
+
+.main-container, .login-container {
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+    box-sizing: content-box;
+}
+.main-container { padding-bottom: 10px; }
+
+.toast-message { position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(0,0,0);
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    text-align: center;
+    width: 500px;
+    line-height: 50px;
+    border-radius: 7px; 
+}
+
+/*------Styling for Navigation------*/
+.navigation { background: #333; padding: 10px 0 15px 0; }
+.navigation a { color: #fff; font-weight: bold; margin: 0 10px; border-right: 1px solid #777; padding-right: 25px; }
+
+.logout {
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/*------Form Styles------*/
+.form-label { margin: 0 0 10px 0; font-size: 12px; color: #333; text-transform: uppercase; }
+
+.invalid-feedback { width: 100%; margin-top: .25rem; font-size: 12px; color: #dc3545; }
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #bdbdbd; font-size: 13px;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #bdbdbd; font-size: 13px;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #bdbdbd; font-size: 13px;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #bdbdbd; font-size: 13px;
+}
+
+.form-group { margin: 40px 0; }
+.form-group li { margin-bottom: 25px; }
+
+.form-control { color: #535559;
+    background: #ededed;
+    border: 0;  }
+
+.btn-holder { margin-top: 20px; text-align: right; }
+
+.btn, .btn:hover { border: 0;
+    font-size: 12px;
+    color: #fff;
+    padding: 9px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+.btn-primary { background-color: #52b329; }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background-color: #4aa125; }
+.btn-secondary { background-color: #3781f0; }
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:active:focus { background-color: #3170d6; }
+
+/*------Login and Registration Component Styling------*/
+ .logo { 
+    background: url(../images/logo.png) no-repeat center;
+    background-color: #ffe665;
+    width: 200px;
+    height: 200px;
+    display: block;
+    background-size: 170px;
+    border-radius: 100px;
+    margin: 70px auto;
+} 
+
+.logo-text { text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4f4d4a;
+    text-shadow: 0px 0px 1px #4f4d4a;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.user-container {
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    background: #ffda1c;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 530px;
+}
+
+.login-form { 
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px;
+}
+.heading, .sub-heading { color: #333; font-weight: bold; }
+.heading { font-size: 20px; }
+.sub-heading { font-size: 16px; }
+.user-btn { margin-right: 20px; }
+
+
+/*------Home Component Styling------*/
+.welcome-text {
+    font-size: 38px;
+    text-align: center;
+    color: #4f4d4a;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+
+.welcome-container { background: #efefef; }
+.welcome-images {
+    background: 
+    url(../images/video.png) 80px center,
+    url(../images/image.png) 260px center, 
+    url(../images/audio.png) 450px center, 
+    url(../images/text.png) 650px center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+    background-size: 58px;
+}
+.upload-btn, .file-upload-btn, .search-btn {
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    min-width: 300px;
+    padding: 15px 0!important;
+    font-weight: bold;
+    text-shadow: none;
+    margin: 60px 20px;
+}
+.file-upload-btn { margin: 0; }
+
+.upload-btn, .upload-btn:active, .upload-btn:focus, .upload-btn:active:focus,
+.file-upload-btn, .file-upload-btn:active, .file-upload-btn:focus, .file-upload-btn:active:focus 
+{ background-image: url(../images/upload.png); }
+
+.search-btn,
+.search-btn:active,
+.search-btn:focus,
+.search-btn:active:focus { background-image: url(../images/search.png); color: #fff; }
+
+
+/*Upload a Document Styling*/
+.upload-images {
+    background: 
+    url(../images/video.png) 100px center,
+    url(../images/image.png) 200px center, 
+    url(../images/audio.png) 300px center, 
+    url(../images/text.png) 400px center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 100px;
+    background-size: 42px;
+    margin: auto;
+}
+
+.upload-text {
+    font-size: 14px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width:100%;
+    height: 5px;
+    background: #e3e3e3(177, 130, 130);
+    margin-bottom: 30px;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: #e3e3e3;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+
+progress[value]::-webkit-progress-value {
+    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */      border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    -webkit-animation: animate-stripes 5s linear infinite;
+    animation: animate-stripes 5s linear infinite;
+  }
+
+  progress[value]::-webkit-progress-value::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 100%;
+    right: 7px;
+    top: 7px;
+    background-color: white;
+  }
+
+  @-webkit-keyframes animate-stripes {
+    100% { background-position: -100px 0px; }
+ }
+ 
+ @keyframes animate-stripes {
+    100% { background-position: -100px 0px; }
+ }
+
+
+/*------Search Component Styling------*/
+.content { width: 700px; margin: 30px auto; }
+
+.search-table { 
+    background: #fff;
+    width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+     }
+
+.search-table th {
+    font-size: 12px;
+    border-bottom: 1px solid #f2f2f2 !important;
+    padding: 15px !important;
+}
+
+.search-table td { 
+    padding: 8px 15px !important;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-transform: capitalize;
+}
+.document-name { min-width: 220px; width: 220px; }
+.document-name a, .document-name a:hover { color: #4aa125; text-decoration: none; }
+.document-category { min-width: 190px; width: 190px; }
+.document-keywords { min-width: 190px; width: 190px; }
+
+
+.invalid-feedback { display: block !important; }
+.actions { min-width: 80px; }
+.edit-icon, .delete-icon {
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent; 
+    width: 18px;
+    height: 18px;
+    margin: 0 15px;
+}
+
+.edit-icon { background-image: url(../images/edit.png); }
+.delete-icon { background-image: url(../images/delete.png); }
+
+.document-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle !important;
+    background-size: 28px; 
+}
+
+.docx, .doc { background: url(../images/doc.png); }
+.jpeg, .jpg { background: url(../images/jpg.png); }
+.png { background: url(../images/png.png); }
+.gif { background: url(../images/jpg.png); }
+.tif, .tiff { background: url(../images/jpg.png); }
+.pdf { background: url(../images/jpg.png); }
+.xls, .xlxs { background: url(../images/xls.png); }
+.ppt, .pptx { background: url(../images/jpg.png); }
+.txt { background: url(../images/jpg.png); } 
+
+
+
+

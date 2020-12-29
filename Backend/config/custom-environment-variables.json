@@ -1,0 +1,5 @@
+{
+    "jwtPrivateKey": "mmd_jwtPrivateKey",
+    "db": "mmd_db",
+    "NODE_ENV": "production"
+}
